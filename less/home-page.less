@@ -6,14 +6,33 @@
     height: 100%;
   
     /* Center and scale the image nicely */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     h1 {
+        text-align: center;
         color: white;
         font-size: 40px;
     }
     h2{
         color: white;
     }
+   
+   
   }
+
+  .dishes {
+      background-color: rgba(158, 81, 16, 0.65);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+      img{
+        margin: 3% 5%;
+        width: 50em;
+  }
+}
