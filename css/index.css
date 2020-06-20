@@ -132,6 +132,7 @@ table {
   box-sizing: border-box;
 }
 html {
+  background-color: #43260f;
   font-size: 62.5%;
   font-family: "Galada", cursive;
   font-family: "Roboto", sans-serif;
@@ -139,82 +140,6 @@ html {
 body,
 html {
   height: 100%;
-}
-body {
-  max-width: 100%;
-}
-body h1 {
-  text-align: center;
-  color: white;
-  font-size: 40px;
-}
-body h2 {
-  color: white;
-  font-size: 4em;
-}
-body p {
-  background-color: #b17537;
-  font-size: 2.4em;
-  color: #ebcdb4;
-}
-body #header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  margin: 0 auto;
-  height: 200px;
-}
-body #header nav {
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-body #header .logo {
-  display: flex;
-  justify-content: flex-start;
-}
-body #header .navbuttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-body #header .navbuttons button {
-  margin: 1% 0;
-  padding: 10px;
-}
-body #header nav {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-}
-body #content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 0, 50%;
-  padding-left: 40%;
-}
-body .main {
-  margin: 0, auto;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-}
-body img {
-  margin: 3% 5%;
-  width: 100%;
-}
-body p {
-  width: 100%;
-}
-footer {
-  height: 20em;
-  background-color: rgba(67, 38, 15, 0.7);
 }
 #bg {
   /* The image used */
@@ -227,19 +152,114 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+body {
+  max-height: 100vh;
+  max-width: 100%;
+}
+body h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+body p {
+  background-color: #b17537;
+  font-size: 2.4em;
+  color: #ebcdb4;
+}
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 0 auto;
+  height: 200px;
+}
+header nav {
+  margin: 0 auto;
+  padding-top: 3%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  display: flex;
+}
+header nav .navbuttons {
+  display: flex;
+  flex-direction: column;
+}
+header nav .navbuttons button {
+  margin: 1% 0;
+  padding: 10px;
+}
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.main img {
+  width: 100%;
+}
+.main p {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  background-color: #533215;
+}
+footer p {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5em;
+}
 .head {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding-top: 200px;
 }
 .head h1 {
   font-size: 8em;
 }
-section {
-  background-color: #b17537;
+.head button {
+  margin: 100px auto 0;
+  width: 10%;
 }
 .people {
-  background-color: #b17537;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  background-color: red;
 }
-.people p {
-  font-size: 24px;
+.people img {
+  height: 20em;
+  width: 25em;
+}
+p {
+  width: 75%;
 }

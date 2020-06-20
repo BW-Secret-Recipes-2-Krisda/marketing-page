@@ -1,29 +1,107 @@
-#bg {
-    /* The image used */
-    background-image: url("images/kitchen.jpg");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-   
-   
-   
+body {
+  max-height: 100vh;
+  max-width: 100%;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
   }
 
+  p {
+    background-color: #b17537;
+    font-size: 2.4em;
+    color: #ebcdb4;
+  }
+}
 
-
-.head {
-  display: block;
-  padding-top: 200px;
-  h1{font-size: 8em;}
-  
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
 
 }
 
+  header{
+    width: 100%;
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 0 auto;
+  height: 200px;
+  nav {
+    margin: 0 auto;
+    padding-top: 3%;
+    width: 90%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+     .logo {
+      display: flex;
+    }
+     .navbuttons {
+      display: flex;
+      flex-direction: column;
+      
+      button {
+        margin: 1% 0;
+        padding: 10px;
+      }
+    }
+  }
+  
+}
 
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+  p {
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+  background-color: @punga;
+}
+footer p {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 5em;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  h1 {
+    font-size: 8em;
+  }
+  button {
+    
+    margin: 100px auto 0;
+    width: 10%;
+  }
+}
