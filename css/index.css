@@ -221,7 +221,7 @@ header nav .navbuttons button {
 }
 footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20em;
@@ -236,6 +236,9 @@ footer p {
   text-align: center;
   font-size: 5em;
 }
+footer a {
+  margin: 1.5%;
+}
 .head {
   display: flex;
   flex-direction: column;
@@ -244,22 +247,43 @@ footer p {
 .head h1 {
   font-size: 8em;
 }
-.head button {
+.head a {
   margin: 100px auto 0;
-  width: 10%;
+  width: 15%;
+}
+.head button {
+  height: 5em;
+  width: 100%;
+  margin: 0 auto;
 }
 .people {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 75%;
-  background-color: red;
+  width: 60%;
+  background-color: #d29c60;
 }
 .people img {
+  margin: 5%;
   height: 20em;
   width: 25em;
 }
-p {
-  width: 75%;
+.people p {
+  margin: 5%;
+  width: 55%;
+}
+.person {
+  margin: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+}
+.head h1 {
+  font-size: 8em;
 }
