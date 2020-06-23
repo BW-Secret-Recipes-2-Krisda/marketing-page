@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -132,7 +132,6 @@ table {
   box-sizing: border-box;
 }
 html {
-  background-color: #43260f;
   font-size: 62.5%;
   font-family: "Galada", cursive;
   font-family: "Roboto", sans-serif;
@@ -152,27 +151,32 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.head {
+  padding-top: 20em;
+}
+@media (max-width:500px) {
+  .head {
+    padding-top: 5em;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 8em;
+  color: #110906;
+}
+@media (max-width:500px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 body {
   max-height: 100vh;
   max-width: 100%;
 }
-body h1 {
-  text-align: center;
-  color: white;
-  font-size: 40px;
-}
 body p {
   background-color: #b17537;
   font-size: 2.4em;
-  color: #ebcdb4;
-}
-#content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
+  color: #110906;
 }
 header {
   width: 100%;
@@ -184,6 +188,11 @@ header {
   margin: 0 auto;
   height: 200px;
 }
+@media (max-width:500px) {
+  header {
+    position: static;
+  }
+}
 header nav {
   margin: 0 auto;
   padding-top: 3%;
@@ -193,8 +202,14 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
-header nav .logo {
+header nav .logo img {
   display: flex;
+}
+@media (max-width:500px) {
+  header nav .logo img {
+    height: 10em;
+    width: 10em;
+  }
 }
 header nav .navbuttons {
   display: flex;
@@ -204,20 +219,44 @@ header nav .navbuttons button {
   margin: 1% 0;
   padding: 10px;
 }
-.main {
-  margin: 0 auto;
+#content {
   display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
-.main img {
+.dish {
   width: 100%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.main p {
-  margin-top: 20px;
+.dish img {
+  border-left: 15px solid #d29c60;
+  border-right: 15px solid #d29c60;
+  border-bottom: 25px solid #d29c60;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .dish img {
+    width: 100%;
+  }
+}
+.dish p {
+  border-top: 25px solid #d29c60;
+  border-left: 15px solid #d29c60;
+  border-right: 15px solid #d29c60;
   padding: 20px;
-  width: 100%;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .dish p {
+    width: 100%;
+  }
 }
 footer {
   display: flex;
@@ -236,16 +275,12 @@ footer p {
   text-align: center;
   font-size: 5em;
 }
-footer a {
-  margin: 1.5%;
+.dish a {
+  margin: 1.5% auto;
 }
 .head {
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-}
-.head h1 {
-  font-size: 8em;
 }
 .head a {
   margin: 100px auto 0;
@@ -279,11 +314,12 @@ footer a {
   align-items: center;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .person {
+    flex-direction: column;
+  }
+}
 .head {
   display: flex;
   flex-direction: column;
-  padding-top: 200px;
-}
-.head h1 {
-  font-size: 8em;
 }
