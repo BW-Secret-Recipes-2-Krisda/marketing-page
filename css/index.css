@@ -182,6 +182,11 @@ body p {
   font-size: 3.4em;
   color: #110906;
 }
+@media (max-width:500px) {
+  body p {
+    font-size: 2.2em;
+  }
+}
 header {
   width: 100%;
   display: flex;
@@ -190,7 +195,7 @@ header {
   justify-content: space-evenly;
   position: fixed;
   margin: 0 auto;
-  height: 200px;
+  height: 20em;
 }
 @media (max-width:500px) {
   header {
@@ -231,18 +236,32 @@ header nav .navbuttons button {
   width: 70%;
   margin: 0 auto;
 }
+.main {
+  width: 80%;
+  background-color: rgba(67, 38, 15, 0.8);
+}
+@media (max-width:500px) {
+  .main {
+    width: 100%;
+  }
+}
 .dish {
   width: 100%;
-  margin: 5% auto;
+  margin: 10% auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  .dish {
+    width: 80%;
+  }
+}
 .dish img {
-  border-left: 15px solid #533215;
-  border-right: 15px solid #533215;
-  border-bottom: 25px solid #533215;
+  border-left: 15px solid #d29c60;
+  border-right: 15px solid #d29c60;
+  border-bottom: 25px solid #d29c60;
   width: 70%;
 }
 @media (max-width:500px) {
@@ -251,9 +270,9 @@ header nav .navbuttons button {
   }
 }
 .dish p {
-  border-top: 25px solid #533215;
-  border-left: 15px solid #533215;
-  border-right: 15px solid #533215;
+  border-top: 25px solid #d29c60;
+  border-left: 15px solid #d29c60;
+  border-right: 15px solid #d29c60;
   padding: 20px;
   width: 70%;
 }
@@ -276,10 +295,17 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20em;
-  background-color: #533215;
+  height: 15em;
+  background-color: rgba(17, 9, 6, 0.8);
+}
+@media (max-width:500px) {
+  footer {
+    height: 8em;
+  }
 }
 footer p {
+  background-color: rgba(17, 9, 6, 0);
+  color: #d29c60;
   padding: 2%;
   height: 50%;
   display: flex;
@@ -287,7 +313,12 @@ footer p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 5em;
+  font-size: 8em;
+}
+@media (max-width:500px) {
+  footer p {
+    font-size: 3em;
+  }
 }
 .head {
   display: flex;
@@ -308,7 +339,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  background-color: #d29c60;
+  background-color: rgba(210, 156, 96, 0.6);
 }
 .people img {
   margin: 5%;

@@ -7,6 +7,9 @@ body {
     background-color: @whiskey;
     font-size: 3.4em;
     color: @asphalt;
+    @media @mobile {
+      font-size: 2.2em;
+    }
   }
 }
 
@@ -20,7 +23,7 @@ header {
   justify-content: space-evenly;
   position: fixed;
   margin: 0 auto;
-  height: 200px;
+  height: 20em;
   @media @mobile {
     position: static;
   }
@@ -58,29 +61,38 @@ header {
   width: 70%;
   margin: 0 auto;
 }
-
+.main {
+  width: 80%;
+  background-color: rgba(67, 38, 15, .8);
+  @media @mobile {
+    width: 100%;
+  }
+}
 
 .dish {
-  // background-color: @punga;
+  
   width:100%;
-  margin: 5% auto;
+  margin: 10% auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media @mobile{
+    width: 80%;
+  }
   img {
-    border-left: 15px solid @punga;
-    border-right: 15px solid @punga;
-    border-bottom: 25px solid @punga;
+    border-left: 15px solid @whiskey;
+    border-right: 15px solid @whiskey;
+    border-bottom: 25px solid @whiskey;
     width: 70%;
     @media @mobile{
       width:100%;
     }
   }
   p {
-    border-top: 25px solid @punga;
-    border-left: 15px solid @punga;
-    border-right: 15px solid @punga;
+    border-top: 25px solid @whiskey;
+    border-left: 15px solid @whiskey;
+    border-right: 15px solid @whiskey;
     padding: 20px;
     width: 70%;
     @media @mobile{
@@ -103,10 +115,15 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20em;
-  background-color: @punga;
+  height: 15em;
+  background-color: rgba(17, 9, 6, .8);
+  @media @mobile{
+    height: 8em;
+  }
 }
 footer p {
+  background-color: rgba(17, 9, 6, 0);
+  color: @whiskey;
   padding: 2%;
   height: 50%;
   display: flex;
@@ -114,7 +131,10 @@ footer p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 5em;
+  font-size: 8em;
+  @media @mobile{
+    font-size: 3em;
+  }
 }
 
 .head {
