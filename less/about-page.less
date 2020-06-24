@@ -1,5 +1,62 @@
 
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  margin: 0 auto;
+  height: 20em;
+  @media @mobile {
+    position: static;
+  }
+  nav {
+    margin: 0 auto;
+    padding-top: 3%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media @mobile {
+      width: 100%;
+    }
+    .logo img{ 
+      height: 25em;
+      width: 25em;
+      display: flex;
+      @media @mobile {
+        height: 10em;
+        width: 10em;
+        margin: 1% 0;
+      }
+    }
+    .navbuttons {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3%;
+      margin-right: 2%;
+      @media @mobile {
+        margin: 1% 1%;
+      }
 
+      button {
+        margin: 2% 0;
+        padding: 1.25em;
+        @media @mobile {
+          height:2em;
+          margin: 1% 1%;
+          padding: 0.35em;
+        }
+      }
+    }
+  }
+}
+.head {
+  display: flex;
+  flex-direction: column;
+}
 .people {
   margin: 0 auto;
   display: flex;
@@ -17,6 +74,9 @@
   p {
     margin: 5%;
     width: 55%;
+    @media @mobile {
+      font-size: 2.2em;
+    }
   }
   
 }
@@ -30,9 +90,4 @@
   }
 }
 
-.head {
-  display: flex;
-  flex-direction: column;
 
-  
-}

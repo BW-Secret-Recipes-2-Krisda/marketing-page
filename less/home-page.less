@@ -35,22 +35,53 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    .logo img{
+    @media @mobile {
+      width: 100%;
+    }
+    .logo img{ 
+      height: 25em;
+      width: 25em;
       display: flex;
       @media @mobile {
         height: 10em;
         width: 10em;
+        margin: 1% 0;
       }
     }
     .navbuttons {
       display: flex;
       flex-direction: column;
-
+      margin-top: 3%;
+      margin-right: 2%;
+      @media @mobile {
+        margin: 1% 1%;
+      }
       button {
-        margin: 1% 0;
-        padding: 10px;
+        margin: 2% 0;
+        padding: 1.25em;
+        @media @mobile {
+          height:2em;
+          margin: 1% 1%;
+          padding: 0.35em;
+        }
       }
     }
+  }
+}
+.head {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  a {
+    text-align: center;
+    margin: 10em auto 0;
+    width: 50%;
+  }
+  button {
+    height: 5em;
+    width: 50%;
+    margin-bottom: 5%;
   }
 }
 #content {
@@ -62,10 +93,12 @@ header {
   margin: 0 auto;
 }
 .main {
+  margin-bottom: 10%;
   width: 80%;
-  background-color: rgba(67, 38, 15, .8);
+  background-color: @deepOak;
   @media @mobile {
     width: 100%;
+    
   }
 }
 
@@ -100,6 +133,12 @@ header {
     }
   }
   
+  button {
+    height: 5em;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
 }
 .dish a {
   margin: 10em auto 0;
@@ -131,25 +170,14 @@ footer p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 8em;
+  font-size: 6em;
   @media @mobile{
     font-size: 3em;
   }
 }
+.lowerButton{
+  margin: 5% auto 10%;
+  width: 40%;
 
-.head {
-  // background-color: @whiskey;
-  display: flex;
-  flex-direction: column;
-
- 
-  a {
-    margin: 10em auto 0;
-    width: 15%;
-  }
-  button {
-    height: 5em;
-    width: 100%;
-    margin: 0 auto;
-  }
 }
+
