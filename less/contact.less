@@ -1,0 +1,180 @@
+#contactBody {
+  max-width: 100%;
+overflow: hidden;
+  header {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: static;
+    margin: 2% auto;
+    height: 5em;
+    @media @mobile {
+      position: static;
+      margin-top: 10%;
+    }
+    @media @tablet {
+      position: static;
+      margin-top: 10%;
+    }
+    nav {
+      margin: 0 auto;
+      padding-top: 10%;
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @media @mobile {
+        width: 100%;
+        margin-top: 10%;
+        padding:0;
+      }
+      @media @tablet {
+        width: 100%;
+        margin-top: 1%;
+        padding: 0;
+      }
+      .logo img {
+        background-color: @whiskey;
+        height: 22em;
+        width: 22em;
+        display: flex;
+        @media @tablet {
+            margin-left: 5%;
+            height: 15em;
+            width: 15em;
+          
+        @media @mobile {
+          margin-left: 5%;
+          height: 10em;
+          width: 10em;
+        }
+       }
+      }
+      .head {
+        margin: 0 auto;
+        padding: 0;
+        @media @mobile {
+          margin-bottom: 5em;
+        }
+        @media @tablet {
+          margin-bottom: 5em;
+        }
+        .navbuttons {
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2%;
+          margin-right: 2%;
+          @media @mobile {
+            margin: 1% 2%;
+          }
+          @media @tablet {
+            margin: 1% 2%;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+      margin: 10% auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: @whiskey;
+    @media @mobile{
+        margin-top: 20%;
+        height: 70%;
+        width: 100%;
+    }
+    @media @tablet{
+        // margin-top: 20%;
+        height: 60%;
+        width: 100%;
+    }
+    form {
+      width: 50%;
+      label {
+          font-size: 2em;
+      }
+      input::placeholder{
+          color:@asphalt;
+      }
+      textarea::placeholder{
+          color:@asphalt;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        background-color: @justRight;
+        color: @asphalt;
+      }
+
+      input[type="submit"] {
+        background-color: @deepOak;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: @punga;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    background-color: rgba(17, 9, 6, 0.8);
+    @media @mobile {
+      height: 8em;
+    }
+    @media @tablet {
+      height: 8em;
+    }
+  }
+  footer p {
+    background-color: rgba(17, 9, 6, 0);
+    color: @whiskey;
+    padding: 2%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6em;
+    @media @mobile {
+      font-size: 3em;
+    }
+    @media @tablet {
+      font-size: 3em;
+    }
+  }
+}
+
