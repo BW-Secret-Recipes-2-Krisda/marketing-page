@@ -257,6 +257,13 @@ body header nav .logo img {
     width: 10em;
   }
 }
+@media (max-width:800px) {
+  body header nav .logo img {
+    margin-left: 5%;
+    height: 15em;
+    width: 15em;
+  }
+}
 body header nav .navbuttons {
   justify-content: center;
   display: flex;
@@ -313,9 +320,9 @@ body header nav .navbuttons button:active {
 }
 @media (max-width:800px) {
   body header nav .navbuttons button {
-    height: 2em;
+    height: 3em;
     margin: 1% 1%;
-    padding: 0.35em;
+    padding: 1.25em;
     font-size: 1em;
   }
 }
@@ -610,8 +617,8 @@ body header nav .logo img {
 @media (max-width:800px) {
   body header nav .logo img {
     margin-left: 5%;
-    height: 10em;
-    width: 10em;
+    height: 15em;
+    width: 15em;
   }
 }
 body header nav .navbuttons {
@@ -670,9 +677,9 @@ body header nav .navbuttons button:active {
 }
 @media (max-width:800px) {
   body header nav .navbuttons button {
-    height: 2em;
+    height: 4em;
     margin: 1% 1%;
-    padding: 0.35em;
+    padding: 1.25em;
     font-size: 1em;
   }
 }
@@ -750,7 +757,7 @@ body #content .people .person p {
   border-top: 25px solid #d29c60;
   border-left: 15px solid #d29c60;
   border-right: 15px solid #d29c60;
-  padding: 20px;
+  padding-bottom: 2em;
   width: 70%;
   font-size: 2em;
 }
@@ -763,7 +770,7 @@ body #content .people .person p {
 @media (max-width:800px) {
   body #content .people .person p {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 body #content .people .person img {
@@ -779,7 +786,7 @@ body #content .people .person img {
 }
 @media (max-width:800px) {
   body #content .people .person img {
-    height: 10em;
-    width: 10em;
+    height: 20em;
+    width: 20em;
   }
 }
