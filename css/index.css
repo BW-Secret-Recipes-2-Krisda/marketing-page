@@ -159,6 +159,11 @@ html {
     padding-top: 5em;
   }
 }
+@media (max-width:800px) {
+  .head {
+    padding-top: 5em;
+  }
+}
 h1 {
   font-family: "Galada", cursive;
   padding: 1%;
@@ -170,6 +175,11 @@ h1 {
   color: #d29c60;
 }
 @media (max-width:500px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width:800px) {
   h1 {
     font-size: 3em;
   }
@@ -207,10 +217,16 @@ body header {
     margin-top: 10%;
   }
 }
+@media (max-width:800px) {
+  body header {
+    position: static;
+    margin-top: 10%;
+  }
+}
 body header nav {
   margin: 0 auto;
-  padding-top: 3%;
-  width: 90%;
+  padding-top: 10%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -222,10 +238,16 @@ body header nav {
     margin-top: 10%;
   }
 }
+@media (max-width:800px) {
+  body header nav {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
 body header nav .logo img {
   background-color: #d29c60;
-  height: 25em;
-  width: 25em;
+  height: 22em;
+  width: 22em;
   display: flex;
 }
 @media (max-width:500px) {
@@ -236,12 +258,18 @@ body header nav .logo img {
   }
 }
 body header nav .navbuttons {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  margin-bottom: 2%;
   margin-right: 2%;
 }
 @media (max-width:500px) {
+  body header nav .navbuttons {
+    margin: 1% 2%;
+  }
+}
+@media (max-width:800px) {
   body header nav .navbuttons {
     margin: 1% 2%;
   }
@@ -283,6 +311,14 @@ body header nav .navbuttons button:active {
     font-size: 1em;
   }
 }
+@media (max-width:800px) {
+  body header nav .navbuttons button {
+    height: 2em;
+    margin: 1% 1%;
+    padding: 0.35em;
+    font-size: 1em;
+  }
+}
 body .head {
   margin-top: 5%;
   display: flex;
@@ -296,7 +332,7 @@ body .head a {
   width: 50%;
 }
 body .head button {
-  margin-top: 2em;
+  margin-bottom: 2em;
   height: 3em;
   width: 60%;
   box-shadow: 4px 4px 0px -1px #43260f;
@@ -325,12 +361,23 @@ body .head button:active {
     margin-top: 0;
   }
 }
+@media (max-width:800px) {
+  body .head button {
+    font-size: 2em;
+    margin-top: 0;
+  }
+}
 body p {
   background-color: #d29c60;
   font-size: 3.4em;
   color: #110906;
 }
 @media (max-width:500px) {
+  body p {
+    font-size: 2.2em;
+  }
+}
+@media (max-width:800px) {
   body p {
     font-size: 2.2em;
   }
@@ -345,11 +392,16 @@ body #content {
 }
 body #content .main {
   margin: 0 auto 5%;
-  width: 80%;
+  width: 70%;
   height: 100%;
   background-color: rgba(67, 38, 15, 0.8);
 }
 @media (max-width:500px) {
+  body #content .main {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
   body #content .main {
     width: 100%;
   }
@@ -367,6 +419,11 @@ body #content .main .dish {
     width: 80%;
   }
 }
+@media (max-width:800px) {
+  body #content .main .dish {
+    width: 80%;
+  }
+}
 body #content .main .dish img {
   border-left: 15px solid #d29c60;
   border-right: 15px solid #d29c60;
@@ -374,6 +431,11 @@ body #content .main .dish img {
   width: 70%;
 }
 @media (max-width:500px) {
+  body #content .main .dish img {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
   body #content .main .dish img {
     width: 100%;
   }
@@ -387,6 +449,11 @@ body #content .main .dish p {
   width: 70%;
 }
 @media (max-width:500px) {
+  body #content .main .dish p {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
   body #content .main .dish p {
     width: 100%;
   }
@@ -435,6 +502,11 @@ body .lowerButton button:active {
     font-size: 2em;
   }
 }
+@media (max-width:800px) {
+  body .lowerButton button {
+    font-size: 2em;
+  }
+}
 body footer {
   display: flex;
   flex-direction: column;
@@ -444,6 +516,11 @@ body footer {
   background-color: rgba(17, 9, 6, 0.8);
 }
 @media (max-width:500px) {
+  body footer {
+    height: 8em;
+  }
+}
+@media (max-width:800px) {
   body footer {
     height: 8em;
   }
@@ -465,7 +542,16 @@ body footer p {
     font-size: 3em;
   }
 }
-header {
+@media (max-width:800px) {
+  body footer p {
+    font-size: 3em;
+  }
+}
+body {
+  max-height: 100vh;
+  max-width: 100%;
+}
+body header {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -476,109 +562,223 @@ header {
   height: 5em;
 }
 @media (max-width:500px) {
-  header {
+  body header {
     position: static;
     margin-top: 10%;
   }
 }
-header nav {
+@media (max-width:800px) {
+  body header {
+    position: static;
+    margin-top: 10%;
+  }
+}
+body header nav {
   margin: 0 auto;
-  padding-top: 3%;
-  width: 90%;
+  padding-top: 10%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width:500px) {
-  header nav {
+  body header nav {
     width: 100%;
     margin-top: 10%;
   }
 }
-header nav .logo img {
-  height: 25em;
-  width: 25em;
+@media (max-width:800px) {
+  body header nav {
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+body header nav .logo img {
+  background-color: #d29c60;
+  height: 22em;
+  width: 22em;
   display: flex;
 }
 @media (max-width:500px) {
-  header nav .logo img {
+  body header nav .logo img {
+    margin-left: 5%;
     height: 10em;
     width: 10em;
-    margin: 1% 0;
   }
 }
-header nav .navbuttons {
+@media (max-width:800px) {
+  body header nav .logo img {
+    margin-left: 5%;
+    height: 10em;
+    width: 10em;
+  }
+}
+body header nav .navbuttons {
+  justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  margin-bottom: 2%;
   margin-right: 2%;
 }
 @media (max-width:500px) {
-  header nav .navbuttons {
-    margin: 1% 1%;
+  body header nav .navbuttons {
+    margin: 1% 2%;
   }
 }
-header nav .navbuttons button {
+@media (max-width:800px) {
+  body header nav .navbuttons {
+    margin: 1% 2%;
+  }
+}
+body header nav .navbuttons a {
+  margin: 0.5em auto;
+  color: #d29d60;
+  text-decoration: none;
+}
+body header nav .navbuttons button {
+  height: 3em;
+  width: 10em;
   margin: 2% 0;
-  padding: 1.25em;
+  padding: 0 1.25em;
+  background: linear-gradient(to bottom, #b17437 5%, #533215 100%);
+  background-color: #b17437;
+  border-radius: 15px;
+  border: 2px solid #110906;
+  display: inline-block;
+  cursor: pointer;
+  color: #d29d60;
+  font-size: 2em;
+  text-decoration: none;
+  text-shadow: 1px 2px 0px #110906;
+}
+body header nav .navbuttons button:hover {
+  background: linear-gradient(to bottom, #533215 5%, #b17437 100%);
+  background-color: #533215;
+}
+body header nav .navbuttons button:active {
+  position: relative;
+  top: 1px;
 }
 @media (max-width:500px) {
-  header nav .navbuttons button {
+  body header nav .navbuttons button {
     height: 2em;
     margin: 1% 1%;
     padding: 0.35em;
+    font-size: 1em;
   }
 }
-.head {
+@media (max-width:800px) {
+  body header nav .navbuttons button {
+    height: 2em;
+    margin: 1% 1%;
+    padding: 0.35em;
+    font-size: 1em;
+  }
+}
+body .aboutHead {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  align-content: center;
+}
+body .aboutHead .head {
   display: flex;
   margin-bottom: 20em;
   align-items: center;
   flex-direction: column;
-  width: 100%;
 }
 @media (max-width:500px) {
-  .head {
+  body .aboutHead .head {
     margin-bottom: 5em;
   }
 }
-.people {
-  margin: 0 auto 10%;
+@media (max-width:800px) {
+  body .aboutHead .head {
+    margin-bottom: 5em;
+  }
+}
+body .aboutHead .head h1 {
+  padding-top: 2%;
+}
+body #content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 60%;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+body #content .people {
+  margin: 0 auto 5%;
+  width: 70%;
+  height: 100%;
   background-color: rgba(67, 38, 15, 0.8);
 }
-.people .person {
-  margin: 2% 0;
+@media (max-width:500px) {
+  body #content .people {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  body #content .people {
+    width: 100%;
+  }
+}
+body #content .people .person {
+  width: 100%;
+  margin: 10% auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width:500px) {
-  .people .person {
-    flex-direction: column;
-  }
-}
-.people .person p {
-  padding: 3%;
-  margin: 5%;
-  width: 55%;
-}
-@media (max-width:500px) {
-  .people .person p {
+  body #content .people .person {
     width: 80%;
-    font-size: 1.7em;
   }
 }
-.people .person img {
-  margin: 5%;
-  height: 20em;
-  width: 25em;
+@media (max-width:800px) {
+  body #content .people .person {
+    width: 80%;
+  }
+}
+body #content .people .person p {
+  text-align: center;
+  border-top: 25px solid #d29c60;
+  border-left: 15px solid #d29c60;
+  border-right: 15px solid #d29c60;
+  padding: 20px;
+  width: 70%;
+  font-size: 2em;
 }
 @media (max-width:500px) {
-  .people .person img {
+  body #content .people .person p {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+@media (max-width:800px) {
+  body #content .people .person p {
+    width: 100%;
+    font-size: 1.5em;
+  }
+}
+body #content .people .person img {
+  margin: 5%;
+  height: 30em;
+  width: 30em;
+}
+@media (max-width:500px) {
+  body #content .people .person img {
+    height: 10em;
+    width: 10em;
+  }
+}
+@media (max-width:800px) {
+  body #content .people .person img {
     height: 10em;
     width: 10em;
   }

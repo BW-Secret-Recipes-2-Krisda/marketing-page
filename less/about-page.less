@@ -1,101 +1,200 @@
-header {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  position: fixed;
-  margin: 0 auto;
-  height: 5em;
-  @media @mobile {
-    position: static;
-    margin-top: 10%;
-  }
-  nav {
-    margin: 0 auto;
-    padding-top: 3%;
-    width: 90%;
+body {
+  max-height: 100vh;
+  max-width: 100%;
+
+  header {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    margin: 0 auto;
+    height: 5em;
     @media @mobile {
-      width: 100%;
+      position: static;
       margin-top: 10%;
     }
-    .logo img {
-      height: 25em;
-      width: 25em;
+    @media @tablet {
+      position: static;
+      margin-top: 10%;
+    }
+    nav {
+      margin: 0 auto;
+      padding-top: 10%;
+      width: 95%;
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       @media @mobile {
-        height: 10em;
-        width: 10em;
-        margin: 1% 0;
+        width: 100%;
+        margin-top: 10%;
+      }
+      @media @tablet {
+        width: 100%;
+        margin-top: 10%;
+      }
+      .logo img {
+        background-color: @whiskey;
+        height: 22em;
+        width: 22em;
+        display: flex;
+        @media @mobile {
+          margin-left: 5%;
+          height: 10em;
+          width: 10em;
+        }
+        @media @tablet {
+          margin-left: 5%;
+          height: 10em;
+          width: 10em;
+        }
+      }
+      .navbuttons {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        @media @mobile {
+          margin: 1% 2%;
+        }
+        @media @tablet {
+          margin: 1% 2%;
+        }
+        a {
+          margin: 0.5em auto;
+          color: #d29d60;
+          text-decoration: none;
+        }
+        button {
+          height: 3em;
+          width: 10em;
+          margin: 2% 0;
+          padding: 0 1.25em;
+          background: linear-gradient(to bottom, #b17437 5%, #533215 100%);
+          background-color: #b17437;
+          border-radius: 15px;
+          border: 2px solid #110906;
+          display: inline-block;
+          cursor: pointer;
+          color: #d29d60;
+          font-size: 2em;
+          // padding:23px 76px;
+          text-decoration: none;
+          text-shadow: 1px 2px 0px #110906;
+          &:hover {
+            background: linear-gradient(to bottom, #533215 5%, #b17437 100%);
+            background-color: #533215;
+          }
+          &:active {
+            position: relative;
+            top: 1px;
+          }
+          @media @mobile {
+            height: 2em;
+            margin: 1% 1%;
+            padding: 0.35em;
+            font-size: 1em;
+          }
+          @media @tablet {
+            height: 2em;
+            margin: 1% 1%;
+            padding: 0.35em;
+            font-size: 1em;
+          }
+        }
       }
     }
-    .navbuttons {
+  }
+  .aboutHead {
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    align-content: center;
+    .head {
+      display: flex;
+      margin-bottom: 20em;
+      align-items: center;
+      flex-direction: column;
+
+      @media @mobile {
+        margin-bottom: 5em;
+      }
+      @media @tablet {
+        margin-bottom: 5em;
+      }
+      h1 {
+        padding-top: 2%;
+      }
+    }
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+  .people {
+    margin: 0 auto 5%;
+    width: 70%;
+    height: 100%;
+    background-color: @deepOak;
+    @media @mobile {
+      width: 100%;
+    }
+    @media @tablet {
+      width: 100%;
+    }
+    .person {
+      width: 100%;
+      margin: 10% auto;
       display: flex;
       flex-direction: column;
-      margin-top: 3%;
-      margin-right: 2%;
+      justify-content: center;
+      align-items: center;
       @media @mobile {
-        margin: 1% 1%;
+        width: 80%;
       }
-
-      button {
-        margin: 2% 0;
-        padding: 1.25em;
+      @media @tablet {
+        width: 80%;
+      }
+      p {
+        text-align: center;
+        border-top: 25px solid @whiskey;
+        border-left: 15px solid @whiskey;
+        border-right: 15px solid @whiskey;
+        padding: 20px;
+        width: 70%;
+        font-size: 2em;
         @media @mobile {
-          height: 2em;
-          margin: 1% 1%;
-          padding: 0.35em;
+          width: 100%;
+          font-size: 1.5em;
+        }
+        @media @tablet {
+          width: 100%;
+          font-size: 1.5em;
+        }
+      }
+      img {
+        margin: 5%;
+        height: 30em;
+        width: 30em;
+        @media @mobile {
+          height: 10em;
+          width: 10em;
+        }
+        @media @tablet {
+          height: 10em;
+          width: 10em;
         }
       }
     }
   }
 }
-.head {
-  display: flex;
-  margin-bottom: 20em;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  @media @mobile {
-    margin-bottom: 5em;
-  }
-}
-.people {
-  margin: 0 auto 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
-  background-color: @deepOak;
-  .person {
-    margin: 2% 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media @mobile {
-      flex-direction: column;
-    }
-    p {
-      padding: 3%;
-      margin: 5%;
-      width: 55%;
-      @media @mobile {
-        width: 80%;
-        font-size: 1.7em;
-      }
-    }
-    img {
-      margin: 5%;
-      height: 20em;
-      width: 25em;
-      @media @mobile {
-        height: 10em;
-        width: 10em;
-      }
-    }
-  }
 }
