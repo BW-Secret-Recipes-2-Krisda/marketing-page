@@ -11,14 +11,15 @@ overflow: hidden;
     position: static;
     margin: 2% auto;
     height: 5em;
-    @media @mobile {
-      position: static;
-      margin-top: 10%;
-    }
     @media @tablet {
       position: static;
       margin-top: 10%;
     }
+    @media @mobile {
+      position: static;
+      margin-top: 10%;
+    }
+    
     nav {
       margin: 0 auto;
       padding-top: 10%;
@@ -27,16 +28,17 @@ overflow: hidden;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      @media @mobile {
-        width: 100%;
-        margin-top: 10%;
-        padding:0;
-      }
       @media @tablet {
         width: 100%;
         margin-top: 1%;
         padding: 0;
       }
+      @media @mobile {
+        width: 100%;
+        margin-top: 1%;
+        padding:0;
+      }
+      
       .logo img {
         background-color: @whiskey;
         height: 22em;
@@ -55,26 +57,33 @@ overflow: hidden;
        }
       }
       .head {
+        width: 100%;
         margin: 0 auto;
-        padding: 0;
+        @media @tablet {
+          margin-bottom: 5em;
+          
+        }
         @media @mobile {
           margin-bottom: 5em;
         }
-        @media @tablet {
-          margin-bottom: 5em;
-        }
+       
         .navbuttons {
           justify-content: center;
           display: flex;
           flex-direction: column;
           margin-bottom: 2%;
           margin-right: 2%;
-          @media @mobile {
-            margin: 1% 2%;
-          }
           @media @tablet {
-            margin: 1% 2%;
+            margin: 3% 2%;
           }
+          @media @mobile {
+            margin: 3% 2%;
+          }
+          
+        }
+        h1{
+          padding-top: 3%;
+          width:55%;
         }
       }
     }

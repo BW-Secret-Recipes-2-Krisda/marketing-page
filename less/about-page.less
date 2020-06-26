@@ -11,14 +11,15 @@ body {
     position: fixed;
     margin: 0 auto;
     height: 5em;
-    @media @mobile {
-      position: static;
-      margin-top: 10%;
-    }
     @media @tablet {
       position: static;
       margin-top: 10%;
     }
+    @media @mobile {
+      position: static;
+      margin-top: 10%;
+    }
+
     nav {
       margin: 0 auto;
       padding-top: 10%;
@@ -27,28 +28,31 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      @media @mobile {
-        width: 100%;
-        margin-top: 10%;
-      }
       @media @tablet {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 1%;
+        padding: 0%;
       }
+      @media @mobile {
+        width: 100%;
+        margin-top: 1%;
+        padding: 0%;
+      }
+
       .logo img {
         background-color: @whiskey;
         height: 22em;
         width: 22em;
         display: flex;
-        @media @mobile {
-          margin-left: 5%;
-          height: 10em;
-          width: 10em;
-        }
         @media @tablet {
           margin-left: 5%;
           height: 15em;
           width: 15em;
+        }
+        @media @mobile {
+          margin-left: 5%;
+          height: 10em;
+          width: 10em;
         }
       }
       .navbuttons {
@@ -57,12 +61,13 @@ body {
         flex-direction: column;
         margin-bottom: 2%;
         margin-right: 2%;
-        @media @mobile {
-          margin: 1% 2%;
-        }
         @media @tablet {
-          margin: 1% 2%;
+          margin: 2% 2%;
         }
+        @media @mobile {
+          margin: 2% 2%;
+        }
+
         a {
           margin: 0.5em auto;
           color: #d29d60;
@@ -92,17 +97,17 @@ body {
             position: relative;
             top: 1px;
           }
-          @media @mobile {
-            height: 2em;
-            margin: 1% 1%;
-            padding: 0.35em;
-            font-size: 1em;
-          }
           @media @tablet {
             height: 4em;
-            margin: 1% 1%;
+            margin: 2% 1%;
             padding: 1.25em;
-            font-size: 1em;
+            font-size: 1.5em;
+          }
+          @media @mobile {
+            height: 2em;
+            margin: 2% 1%;
+            padding: 0.35em;
+            font-size: 1.15em;
           }
         }
       }
@@ -120,13 +125,13 @@ body {
       margin-bottom: 20em;
       align-items: center;
       flex-direction: column;
-
-      @media @mobile {
-        margin-bottom: 5em;
-      }
       @media @tablet {
         margin-bottom: 5em;
       }
+      @media @mobile {
+        margin-bottom: 5em;
+      }
+
       h1 {
         padding-top: 2%;
       }
@@ -140,61 +145,63 @@ body {
     align-items: center;
     width: 70%;
     margin: 0 auto;
-  .people {
-    margin: 0 auto 5%;
-    width: 70%;
-    height: 100%;
-    background-color: @deepOak;
-    @media @mobile {
-      width: 100%;
-    }
-    @media @tablet {
-      width: 100%;
-    }
-    .person {
-      width: 100%;
-      margin: 10% auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media @mobile {
-        width: 80%;
-      }
+    .people {
+      margin: 0 auto 5%;
+      width: 70%;
+      height: 100%;
+      background-color: @deepOak;
       @media @tablet {
-        width: 80%;
+        width: 100%;
       }
-      p {
-        text-align: center;
-        border-top: 25px solid @whiskey;
-        border-left: 15px solid @whiskey;
-        border-right: 15px solid @whiskey;
-        padding-bottom: 2em;
-        width: 70%;
-        font-size: 2em;
-        @media @mobile {
-          width: 100%;
-          font-size: 1.5em;
-        }
+      @media @mobile {
+        width: 100%;
+      }
+
+      .person {
+        width: 100%;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @media @tablet {
-          width: 100%;
+          width: 80%;
+        }
+        @media @mobile {
+          width: 80%;
+        }
+
+        p {
+          text-align: center;
+          border-top: 25px solid @whiskey;
+          border-left: 15px solid @whiskey;
+          border-right: 15px solid @whiskey;
+          padding-bottom: 2em;
+          width: 70%;
           font-size: 2em;
+          @media @tablet {
+            width: 100%;
+            font-size: 2em;
+          }
+          @media @mobile {
+            width: 100%;
+            font-size: 1.5em;
+          }
         }
-      }
-      img {
-        margin: 5%;
-        height: 30em;
-        width: 30em;
-        @media @mobile {
-          height: 10em;
-          width: 10em;
-        }
-        @media @tablet {
-          height: 20em;
-          width: 20em;
+        img {
+          margin: 5%;
+          height: 30em;
+          width: 30em;
+          @media @tablet {
+            height: 20em;
+            width: 20em;
+          }
+          @media @mobile {
+            height: 10em;
+            width: 10em;
+          }
         }
       }
     }
   }
-}
 }

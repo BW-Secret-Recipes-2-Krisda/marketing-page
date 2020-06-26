@@ -11,14 +11,15 @@ body {
     position: fixed;
     margin: 0 auto;
     height: 5em;
-    @media @mobile {
-      position: static;
-      margin-top: 10%;
-    }
     @media @tablet {
       position: static;
       margin-top: 10%;
     }
+    @media @mobile {
+      position: static;
+      margin-top: 10%;
+    }
+
     nav {
       margin: 0 auto;
       // padding-top: 10%;
@@ -27,28 +28,31 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      @media @mobile {
-        width: 100%;
-        margin-top: 10%;
-      }
       @media @tablet {
         width: 100%;
-        margin-top: 10%;
+        margin-top: 1%;
+        padding: 0%;
       }
+      @media @mobile {
+        width: 100%;
+        margin-top: 1%;
+        padding: 0%;
+      }
+
       .logo img {
         background-color: @whiskey;
         height: 22em;
         width: 22em;
         display: flex;
-        @media @mobile {
-          margin-left: 5%;
-          height: 10em;
-          width: 10em;
-        }
         @media @tablet {
           margin-left: 5%;
           height: 15em;
           width: 15em;
+        }
+        @media @mobile {
+          margin-left: 5%;
+          height: 10em;
+          width: 10em;
         }
       }
       .navbuttons {
@@ -57,12 +61,13 @@ body {
         flex-direction: column;
         margin-bottom: 2%;
         margin-right: 2%;
-        @media @mobile {
-          margin: 1% 2%;
-        }
         @media @tablet {
-          margin: 1% 2%;
+          margin: 2% 2%;
         }
+        @media @mobile {
+          margin: 2% 2%;
+        }
+
         a {
           margin: 0.5em auto;
           color: #d29d60;
@@ -92,17 +97,17 @@ body {
             position: relative;
             top: 1px;
           }
-          @media @mobile {
-            height: 2em;
-            margin: 1% 1%;
-            padding: 0.35em;
-            font-size: 1em;
-          }
           @media @tablet {
             height: 3em;
-            margin: 1% 1%;
+            margin: 2% 1%;
             padding: 1.25em;
-            font-size: 1em;
+            font-size: 1.5em;
+          }
+          @media @mobile {
+            height: 2em;
+            margin: 2% 1%;
+            padding: .35em;
+            font-size: 1.15em;
           }
         }
       }
@@ -116,14 +121,133 @@ body {
     width: 100%;
 
     a {
+      padding-top: 2.5%;
       text-align: center;
-      margin: 12em auto 0;
-      width: 50%;
-    }
-    button {
+      margin: 3em auto 0;
+      width: 40%;
       margin-bottom: 2em;
       height: 3em;
-      width: 60%;
+      box-shadow: 4px 4px 0px -1px #43260f;
+      background: linear-gradient(to bottom, #b17437 5%, #533215 100%);
+      background-color: #b17437;
+      border-radius: 15px;
+      border: 2px solid #110906;
+      display: inline-block;
+      cursor: pointer;
+      color: #d29d60;
+      font-size: 4em;
+      text-decoration: none;
+      text-shadow: 1px 2px 0px #110906;
+      &:hover {
+        background: linear-gradient(to bottom, #533215 5%, #b17437 100%);
+        background-color: #533215;
+      }
+      &:active {
+        position: relative;
+        top: 1px;
+      }
+      @media @tablet {
+        font-size: 2em;
+        margin-top: 5%;
+      }
+      @media @mobile {
+        font-size: 2em;
+        margin-top: 5%;
+      }
+    }
+  }
+
+  p {
+    background-color: @whiskey;
+    font-size: 3.4em;
+    color: @asphalt;
+    @media @tablet {
+      font-size: 2.2em;
+    }
+    @media @mobile {
+      font-size: 2.2em;
+    }
+  }
+
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    .main {
+      margin: 0 auto 5%;
+      width: 70%;
+      height: 100%;
+      background-color: @deepOak;
+      @media @tablet {
+        width: 100%;
+      }
+      @media @mobile {
+        width: 100%;
+      }
+
+      .dish {
+        width: 100%;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media @tablet {
+          width: 80%;
+        }
+        @media @mobile {
+          width: 80%;
+        }
+
+        img {
+          border-left: 15px solid @whiskey;
+          border-right: 15px solid @whiskey;
+          border-bottom: 25px solid @whiskey;
+          width: 70%;
+          @media @tablet {
+            width: 100%;
+          }
+          @media @mobile {
+            width: 100%;
+          }
+        }
+        p {
+          text-align: center;
+          border-top: 25px solid @whiskey;
+          border-left: 15px solid @whiskey;
+          border-right: 15px solid @whiskey;
+          padding: 20px;
+          width: 70%;
+          @media @tablet {
+            width: 100%;
+          }
+          @media @mobile {
+            width: 100%;
+          }
+        }
+        a {
+          margin: 10em auto 0;
+          width: 15%;
+        }
+      }
+    }
+  }
+
+  .lowerButton {
+    margin: 0 auto 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    a {
+      padding-top: 2.5%;
+      text-align: center;
+      margin: 1em auto 0;
+      width: 40%;
+      height: 3em;
       box-shadow: 4px 4px 0px -1px #43260f;
       background: linear-gradient(to bottom, #b17437 5%, #533215 100%);
       background-color: #b17437;
@@ -144,168 +268,46 @@ body {
         position: relative;
         top: 1px;
       }
-      @media @mobile {
-        font-size: 2em;
-        margin-top: 0;
-      }
       @media @tablet {
         font-size: 2em;
-        margin-top: 0;
       }
-    }
-  }
-
-  p {
-    background-color: @whiskey;
-    font-size: 3.4em;
-    color: @asphalt;
-    @media @mobile {
-      font-size: 2.2em;
-    }
-    @media @tablet {
-      font-size: 2.2em;
-    }
-  }
-
-
-#content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  margin: 0 auto;
-  .main {
-    margin: 0 auto 5%;
-    width: 70%;
-    height: 100%;
-    background-color: @deepOak;
-    @media @mobile {
-      width: 100%;
-    }
-    @media @tablet {
-      width: 100%;
-    }
-    .dish {
-      width: 100%;
-      margin: 10% auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       @media @mobile {
-        width: 80%;
-      }
-      @media @tablet {
-        width: 80%;
-      }
-      img {
-        border-left: 15px solid @whiskey;
-        border-right: 15px solid @whiskey;
-        border-bottom: 25px solid @whiskey;
-        width: 70%;
-        @media @mobile {
-          width: 100%;
-        }
-        @media @tablet {
-          width: 100%;
-        }
-      }
-      p {
-        text-align: center;
-        border-top: 25px solid @whiskey;
-        border-left: 15px solid @whiskey;
-        border-right: 15px solid @whiskey;
-        padding: 20px;
-        width: 70%;
-        @media @mobile {
-          width: 100%;
-        }
-        @media @tablet {
-          width: 100%;
-        }
-      }
-      a {
-        margin: 10em auto 0;
-        width: 15%;
+        font-size: 2em;
+        padding-top: 3%;
       }
     }
   }
-}
 
-.lowerButton {
-  margin: 0 auto 5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  a {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+    background-color: rgba(17, 9, 6, 0.8);
+    @media @mobile {
+      height: 8em;
+    }
+    @media @tablet {
+      height: 8em;
+    }
+  }
+  footer p {
+    background-color: rgba(17, 9, 6, 0);
+    color: @whiskey;
+    padding: 2%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 3em auto 0;
-    width: 50%;
-  }
-  button {
-    height: 3em;
-    width: 60%;
-    box-shadow: 4px 4px 0px -1px #43260f;
-    background: linear-gradient(to bottom, #b17437 5%, #533215 100%);
-    background-color: #b17437;
-    border-radius: 15px;
-    border: 2px solid #110906;
-    display: inline-block;
-    cursor: pointer;
-    color: #d29d60;
-    font-size: 4em;
-    // padding:23px 76px;
-    text-decoration: none;
-    text-shadow: 1px 2px 0px #110906;
-    &:hover {
-      background: linear-gradient(to bottom, #533215 5%, #b17437 100%);
-      background-color: #533215;
-    }
-    &:active {
-      position: relative;
-      top: 1px;
+    font-size: 6em;
+    @media @tablet {
+      font-size: 3em;
     }
     @media @mobile {
-      font-size: 2em;
-    }
-    @media @tablet {
-      font-size: 2em;
+      font-size: 3em;
     }
   }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 15em;
-  background-color: rgba(17, 9, 6, 0.8);
-  @media @mobile {
-    height: 8em;
-  }
-  @media @tablet {
-    height: 8em;
-  }
-}
-footer p {
-  background-color: rgba(17, 9, 6, 0);
-  color: @whiskey;
-  padding: 2%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 6em;
-  @media @mobile {
-    font-size: 3em;
-  }
-  @media @tablet {
-    font-size: 3em;
-  }
-}
 }
